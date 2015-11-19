@@ -13,6 +13,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
   api.imply(['jquery', 'd3js:d3@3.4.13']);
+  api.use(['d3js:d3@3.4.13'], 'client');
 
   //api.addFiles('metrics-graphics.browserify.js');
   api.addFiles([
